@@ -26,3 +26,8 @@ Route::get('/delete/{id}', 'RestoController@delete');
 Route::get('/edit/{id}', 'RestoController@edit');
 Route::post('/edit', 'RestoController@update');
 /* Route::get('/home', 'HomeController@index')->name('home'); */
+
+
+Route::get('/regis',function() {
+        return view('auth.regis');
+});

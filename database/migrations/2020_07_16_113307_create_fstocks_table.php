@@ -17,10 +17,10 @@ class CreateFstocksTable extends Migration
             $table->id();
             $table->date('dateOperation');
             $table->string('operation');
-            $table->string('quantiteEntree');
-            $table->string('quantiteSortie');
-            $table->date('datePeramption');
-            $table->string('prixAchat');
+            $table->integer('quantiteEntree');
+            $table->integer('quantiteSortie');
+            $table->date('datePeremption');
+            $table->integer('prixAchat');
             
             $table->integer('article_id')->unsigned();
                 $table->foreign('article_id')->references('id')->on('articles');

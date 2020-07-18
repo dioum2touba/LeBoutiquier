@@ -242,7 +242,7 @@
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
-                <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-menu-template/index.html">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="/">
                         <div class="brand-logo"></div>
                         <h2 class="brand-text mb-0">Le Boutiquier</h2>
                     </a></li>
@@ -253,33 +253,33 @@
         <div class="main-menu-content">
     
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">               
-                <li class=" nav-item"><a href="#"><i class=""></i><span class="menu-title" data-i18n="Ecommerce">Gestion Client</span></a>
+                <li class=" nav-item"><a href="#"><i class="fa fa-users"></i><span class="menu-title" data-i18n="Ecommerce">Gestion Client</span></a>
                     <ul class="menu-content">
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Clients</span></a>
+                        <li><a href="{{ route('listeClient') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Clients</span></a>
                         </li>
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Client</span></a>
+                        <li><a href="{{ route('addClient') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Client</span></a>
                         </li>
                     </ul>
                 </li>
             </ul>
 
              <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">               
-                <li class=" nav-item"><a href="#"><i class=""></i><span class="menu-title" data-i18n="Ecommerce">Gestion Article</span></a>
+                <li class=" nav-item"><a href="#"><i class="fa fa-creative-commons"></i><span class="menu-title" data-i18n="Ecommerce">Gestion Article</span></a>
                     <ul class="menu-content">
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Articles</span></a>
+                        <li><a href="{{ route('listeArticle') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Articles</span></a>
                         </li>
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Article</span></a>
+                        <li><a href="{{ route('addArticle') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Article</span></a>
                         </li>
                     </ul>
                 </li>
             </ul>
 
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">               
-                <li class=" nav-item"><a href="#"><i class=""></i><span class="menu-title" data-i18n="Ecommerce">Gestion Boutique</span></a>
+                <li class=" nav-item"><a href="#"><i class="fa fa-shopping-cart"></i><span class="menu-title" data-i18n="Ecommerce">Gestion Boutique</span></a>
                     <ul class="menu-content">
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Boutiques</span></a>
+                        <li><a href="{{ route('listeBoutique') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Boutiques</span></a>
                         </li>
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Boutique</span></a>
+                        <li><a href="{{ route('addBoutique') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Boutique</span></a>
                         </li>
                     </ul>
                 </li>
@@ -287,22 +287,22 @@
 
 
              <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">               
-                <li class=" nav-item"><a href="#"><i class=""></i><span class="menu-title" data-i18n="Ecommerce">Gestion Fournisseur</span></a>
+                <li class=" nav-item"><a href="#"><i class="fa fa-male"></i><span class="menu-title" data-i18n="Ecommerce">Gestion Fournisseur</span></a>
                     <ul class="menu-content">
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Fournisseurs</span></a>
+                        <li><a href="{{ route('listeFournisseur') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Fournisseurs</span></a>
                         </li>
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Fournisseur</span></a>
+                        <li><a href="{{ route('addFournisseur') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Fournisseur</span></a>
                         </li>
                     </ul>
                 </li>
             </ul>
 
              <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">               
-                <li class=" nav-item"><a href="#"><i class=""></i><span class="menu-title" data-i18n="Ecommerce">Gestion Fiche Stock</span></a>
+                <li class=" nav-item"><a href="#"><i class="fa fa-file"></i><span class="menu-title" data-i18n="Ecommerce">Gestion Fiche Stock</span></a>
                     <ul class="menu-content">
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Fiche Stock</span></a>
+                        <li><a href="{{ route('listeFstock') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Liste Fiche Stock</span></a>
                         </li>
-                        <li><a href=""><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Fiche Stock</span></a>
+                        <li><a href="{{ route('addFstock') }}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Ajouter Fiche Stock</span></a>
                         </li>
                     </ul>
                 </li>

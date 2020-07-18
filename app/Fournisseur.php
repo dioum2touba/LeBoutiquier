@@ -12,3 +12,4 @@ class Fournisseur extends Model
     {
         $this->hasMany('Fstock::class');
     }
+}

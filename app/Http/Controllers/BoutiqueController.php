@@ -39,7 +39,7 @@ class BoutiqueController extends Controller
         'nom' => 'required',
         'ville' => 'required',
         'telephone' => 'required|integer',
-        'email' => 'required|email|unique:fournisseurs',
+        'email' => 'required|email|unique:boutiques',
         'boitePostal' => 'required'
         ]);
 

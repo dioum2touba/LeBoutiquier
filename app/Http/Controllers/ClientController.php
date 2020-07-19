@@ -41,7 +41,7 @@ class ClientController extends Controller
         'prenom' => 'required',
         'ville' => 'required',
         'telephone' => 'required|integer',
-        'email' => 'required|email|unique:fournisseurs',
+        'email' => 'required|email|unique:clients',
         'boitePostal' => 'required'
         ]);
 

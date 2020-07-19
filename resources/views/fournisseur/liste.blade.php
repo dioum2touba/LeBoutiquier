@@ -44,8 +44,8 @@
                                                    <td>{{ $fournisseurs->email }}</td>
                                                    <td>{{ $fournisseurs->boitePostal }}</td>
                                                    <td>
-                                                      <a href="{{ route('editClient',$fournisseurs->id) }}"><i class="feather icon-edit "></i>
-                                                      <a href="{{ route('deleteClient',$fournisseurs->id) }}" onclick="return confirm('voulez vous supprimez ce fournisseur')";><i class="feather icon-trash danger"></i>  
+                                                      <a href="{{ route('editFournisseur',$fournisseurs->id) }}"><i class="feather icon-edit "></i>
+                                                      <a href="{{ route('deleteFournisseur',$fournisseurs->id) }}" onclick="return confirm('voulez vous supprimez ce fournisseur')";><i class="feather icon-trash danger"></i>  
                                                    </td>
                                              </tr>
                                           @endforeach                  

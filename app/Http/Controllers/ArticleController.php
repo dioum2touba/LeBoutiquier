@@ -38,8 +38,8 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         $data =$request->validate([
-        'codeGeneral' => 'required',
-        'codeBare' => 'required',
+        'codeGeneral' => 'required|unique:articles',
+        'codeBare' => 'required|unique:articles',
         'nom' => 'required',
         'conditionnement' => 'required',
         'stockMin' => 'required|integer',

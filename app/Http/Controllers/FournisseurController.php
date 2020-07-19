@@ -107,7 +107,7 @@ class FournisseurController extends Controller
         $fournisseur->email = request('email');
         $fournisseur->boitePostal = request('boitePostal');
         $fournisseur->update();
-        return redirect()->route('listeClient')->with('success','fournisseur succesfully updated');
+        return redirect()->route('listeFournisseur')->with('success','fournisseur succesfully updated');
     }
 
     /**
@@ -120,6 +120,6 @@ class FournisseurController extends Controller
     {
         $fournisseur = Fournisseur::findOrFail($id);
         $fournisseur->delete();
-        return redirect()->route('listeClient')->with('success','fournisseur succesfully deleted');
+        return redirect()->route('listeFournisseur')->with('success','fournisseur succesfully deleted');
     }
 }
